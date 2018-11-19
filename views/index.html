@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>index</title>
+</head>
+<body>
+    <script>
+        function loadxml(){
+    
+    var xml=new XMLHttpRequest();
+   
+    xml.onreadystatechange=function(){
+        if(xml.readyState==4&&xml.status===200){
+            alert(xml.responseText);
+        }
+    }
+    xml.open('get', '/data',true);
+    xml.send();
+}
+</script>
+<p>示例</p>
+<input type="button" onclick="loadxml()" value="提交" /> 
+<span ></span>
+
+</body>
+</html>

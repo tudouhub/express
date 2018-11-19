@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="/css/logon.css" >
+    <title>欢迎</title>
+
+</head>
+
+<body>
+    <div id="login-logo">
+        <a href="https://cschat.antcloud.com.cn/index.htm?tntInstId=YQPUTWCN&scene=SCE00001503#/">
+            <img src="/icon/LY.ico" alt="">
+            IT服务中心
+        </a>
+
+    </div>
+    <div id="login">
+        <h1>欢迎使用test系统</h1>
+        <p>请先登录</p>
+
+        <form action="" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="text-align: right">
+                            <label for="user">用户名:</label>
+
+                        </td>
+                        <td style="text-align: left">
+                            <input type="text" name="aut_user" id="user" onfocus="usrJ()" onblur="usrBlur(event)">
+                            <p style="color:green" id="usertip"> </p>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"><label for="pwd">密码:</label></td>
+                        <td style="text-align:left"><input type="password" name="auth_pwd" id="pwd" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="center loginbtn">
+                            <input type="submit" value="登录" class="loginbtn">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="">注册</a></td>
+                        <td><a href="">忘记密码？</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script>
+        var userbtn=document.getElementById("user");
+        var usrspan = document.getElementById('usertip');
+      
+
+
+
+        function usrJ() {
+
+            usrspan.innerText = "";
+        }
+
+        function usrBlur(e) {
+            var re = /^\d{11}$/g;
+       
+        var reTest =re.test(e.target.value);
+        console.log(reTest);
+
+            if (!reTest) {
+
+                usrspan.innerText = "你输入的不是手机号";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

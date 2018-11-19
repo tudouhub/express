@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    color: #333;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: sans-serif, "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    position: relative;
+    z-index: 200;
+}
+
+.headerMain {
+    height: 100%;
+    margin: auto;
+    position: relative;
+    width: 1000px;
+}
+
+.logo {
+    display: block;
+    margin-left: 50px;
+    margin-top: 5px;
+    float: left;
+    height: 60px;
+    max-width: 300px;
+    *width: 300px;
+}
+
+.navRight {
+    display: block;
+    height: 50px;
+    margin-top: 22px;
+    float: right;
+    margin-right: 50px;
+}
+
+.navRight li {
+    display: block;
+    float: left;
+    *width: 80px;
+    min-width: 80px;
+    margin-left: 20px;
+    line-height: 23px;
+    height: 25px;
+}
+
+.navRight li a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.middle {
+    background: none repeat scroll 0 0 #2f9fe7;
+    width: 100%;
+    z-index: 100;
+}
+.mainBox{
+    background-image: url('..\..\public\icon\login_bg.png');
+    width:1000px;
+	height:600px;
+	margin:0 auto;
+	position:relative;
+}
+
+
+.loginBox {
+
+  
+}
